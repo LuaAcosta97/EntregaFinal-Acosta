@@ -112,7 +112,7 @@ ul {
   justify-content: space-between;
   align-items: center;
   padding: 55px;
-  width: 1450px;
+  width: 90%;
   height: 50px;
   background-color: white;
   overflow: visible;
@@ -130,6 +130,7 @@ ul {
   align-items: center;
   height: 200px;
   padding: 60px;
+  overflow: hidden;
 }
 .font-prod {
   font-size: x-large !important;
@@ -242,10 +243,10 @@ ul {
   height: 400px;
   width: 1400px;
   background-color: #05c1ebc7;
-  border: black 3px solid;
   display: flex;
   justify-content: space-between;
   overflow: visible;
+  border-radius: 20px;
 }
 
 .formul-container {
@@ -260,7 +261,6 @@ ul {
   background-color: #8be7fcb2;
 }
 .img-contac {
-  border: black 3px solid;
   height: 420px;
   max-width: 40%;
   overflow: hidden;
@@ -289,27 +289,56 @@ ul {
     background-color: white;
   }
   .img-home {
-    width: 600px;
+    width: 100%;
   }
   .img1 {
     width: 150%;
     overflow: scroll;
   }
 
+  .container-products {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+    "product1 product1"
+    "product2 product2";
+    
+  
+}
+.product1 {
+  grid-area: product1;
+
+  }
+
+.product2 {
+  grid-area: product2;
+ margin-top: 20px;
+}
+
   .prod-section {
-    background-color: #3dccec;
     display: block;
     align-items: start;
-    height: 200px;
+    height:40%;
     overflow: visible;
     padding: 60px;
   }
   .img-prod {
-    width: 400px;
+    width: 100%;
   }
 
+  .lista-productos {
+    display: block;
+   
+    }
+  
+    .piedras{
+      width: 70%;
+    }
+
   .img-adopciones {
-    width: 400px;
+    width: 80%;
+    margin: 20px;
   }
 
   .nos-section-divs {
@@ -364,29 +393,28 @@ ul {
     }
 
   .formul {
-    height: 70%;
+    height: 100%;
     width: 100%;
     background-color: #05c1ebc7;
-    border: black 3px solid;
-    display: flex;
-    flex-direction: row;
-    overflow: visible;
+    display: block; 
+    overflow: hidden;
   }
 
   .formul-container {
-    height: 80%;
+    height: 40%;
     padding: 12px;
-    max-width: 40%;
+    max-width: 80%;
+  
   }
   .formul-textarea {
     height: 50%;
     
     }
   .img-contac {
-    border: black 3px solid;
-    height: 4px;
-    width: 20%;
-    overflow: hidden;
+    margin-top: 20px;
+    height: 100%;
+    width: 100%;
+    overflow:hidden;
   }
 
   .footer {
