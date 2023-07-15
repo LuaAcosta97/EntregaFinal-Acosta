@@ -15,6 +15,19 @@ ul {
   list-style: none;
   font-size: 15px;
 }
+a {
+  text-decoration: none !important;
+  color: #046adf;
+}
+
+a:hover {
+  background: #00aeffda;
+  color: white;
+  font-weight: bold;
+  padding: 5px;
+  text-decoration: none;
+  border-radius: 17px;
+}
 
 .logo1 {
   height: 100;
@@ -49,10 +62,37 @@ ul {
   background-color: #f29696;
   padding: 20px;
 }
+.eslogan{
+  margin-top: 10px;
+  font-size: xx-large;
+}
+
+.buscador {
+  width: 250px;
+  padding: 8px;
+  margin: 15px;
+}
+
+input {
+  padding: 3px;
+  align-items: start;
+  border: none;
+  border-radius: 5px;
+  font-style: italic;
+}
+
+input:hover {
+  padding: 4px;
+}
+.img-home{
+ align-content: center;
+ margin-left: 20%;
+}
 .inicio-title-PRODC {
   display: flex;
   justify-content: center;
   place-items: center;
+  font-size: xx-large;
 }
 
 .inicio-section {
@@ -77,25 +117,35 @@ ul {
   grid-area: product1;
   background-color: white;
   border-radius: 10px;
+  box-shadow: 1px 1px 5px;
 }
 
 .product2 {
   grid-area: product2;
   background-color: white;
   border-radius: 10px;
-  height: 400px;
+  height: 350px;
   padding-top: 30px;
+  box-shadow: 1px 1px 5px;
 }
 .cont-info-prod {
   margin: 30px;
+  font-weight: bold;
 }
 .bay {
-  background-color: #008afc;
+  background-color: #0076fc;
   color: white;
-  padding: 6px;
+  padding: 8px;
+  margin-top: 3px;
+  border: none;
   border-radius: 8px;
+  font-size: medium;
 }
-
+.bay:hover {
+  background-color: #038eff;
+  font-weight: bold;
+  border-radius: 12px;
+}
 .aside-h3 {
   width: 50%;
   margin: 10px;
@@ -103,6 +153,7 @@ ul {
 
 .aside-h2 {
   width: auto;
+  height: 80px;
   margin: 10px;
 }
 
@@ -132,14 +183,30 @@ ul {
   padding: 60px;
   overflow: hidden;
 }
+.img-prod {
+  width: 600px;
+}
 .font-prod {
   font-size: x-large !important;
   font-family: sans-serif;
 }
 .card {
   background-color: white;
-  border-radius: 6px;
+  border-radius: 5px;
+  width: 400px;
+  height: 550px !important;
+  box-shadow: 3px 3px 5px;
 }
+.card:hover {
+  background-color: rgb(250, 248, 246);
+}
+
+.card-body {
+  overflow-x: visible;
+  margin: 3px;
+  font-size: medium;
+}
+
 .lista-productos {
   display: flex;
   flex-direction: row;
@@ -201,7 +268,6 @@ ul {
   flex-direction: row;
   justify-content: space-evenly;
   padding: 60px;
-  
 }
 
 .section-divs-container {
@@ -209,6 +275,9 @@ ul {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+}
+.section-divs-container:hover {
+  font-weight: bold;
 }
 
 .tres-divs {
@@ -224,20 +293,29 @@ ul {
   font-weight: bold;
   background-color: #77dbf1;
 }
+.tres-divs:hover {
+  background-color: #62e2ff;
+  color: white;
+  border: 5px #3ed7fdc4 solid;
+  border-radius: 40%;
+  height: 38px;
+  width: 70px;
+}
 
 .nos-info-divs {
   display: flex;
   justify-content: center;
   width: 400px;
   height: 200px;
- 
 }
+
 .cont-section-divs {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   padding: 60px;
 }
+
 .formul {
   padding: 40px;
   height: 400px;
@@ -288,59 +366,72 @@ ul {
     width: 100%;
     background-color: white;
   }
+
+  .eslogan{
+    margin-top: 10px;
+    font-size: x-large;
+  }
   .img-home {
     width: 100%;
+    margin-left: 0%;
+     
   }
   .img1 {
     width: 150%;
     overflow: scroll;
   }
-
+  .inicio-title-PRODC {
+    font-size: x-large;
+  }
   .container-products {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  grid-template-areas:
-    "product1 product1"
-    "product2 product2";
-    
-  
-}
-.product1 {
-  grid-area: product1;
-
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+      "product1 product1"
+      "product2 product2";
+  }
+  .product1 {
+    grid-area: product1;
   }
 
-.product2 {
-  grid-area: product2;
- margin-top: 20px;
-}
+  .product2 {
+    grid-area: product2;
+    margin-top: 20px;
+  }
 
   .prod-section {
     display: block;
     align-items: start;
-    height:40%;
+    height: 40%;
     overflow: visible;
-    padding: 60px;
   }
   .img-prod {
     width: 100%;
+    border-radius: 30px;
   }
 
   .lista-productos {
     display: block;
-   
-    }
-  
-    .piedras{
-      width: 70%;
-    }
+  }
+
+  .piedras {
+    width: 70%;
+  }
 
   .img-adopciones {
     width: 80%;
-    margin: 20px;
+    margin-left: 20px;
   }
 
+  .serv-article-vet {
+    margin-left: 0%;
+    width: 70%;
+  }
+  .serv-article-pelu {
+    margin-left: 0%;
+    width: 70%;
+  }
   .nos-section-divs {
     display: block;
     align-items: start;
@@ -360,13 +451,20 @@ ul {
     margin: 10px;
   }
 
+  .tres-divs:hover {
+    background-color: #62e2ff;
+    color: white;
+    border: 5px #3ed7fdc4 solid;
+    border-radius: 40%;
+    height: 30px;
+    width: 60%;
+  }
   .nos-info-divs {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     width: 410px;
     height: 100%;
-    
   }
   .nos-article-info1 {
     width: 70%;
@@ -377,44 +475,40 @@ ul {
     height: 20%;
   }
 
-
   .cont-section-divs {
     display: block;
     justify-content: space-between;
     align-items: center;
-
   }
   .cont-info-divs {
-      display: block;
-      align-items: start;
-      width: 410px;
-      height: 100%;
-
-    }
+    display: block;
+    align-items: start;
+    width: 410px;
+    height: 100%;
+  }
 
   .formul {
-    height: 100%;
+    height: 120%;
     width: 100%;
     background-color: #05c1ebc7;
-    display: block; 
+    display: block;
     overflow: hidden;
+    border-radius: 0%;
   }
 
   .formul-container {
     height: 40%;
     padding: 12px;
     max-width: 80%;
-  
   }
   .formul-textarea {
     height: 50%;
-    
-    }
+  }
   .img-contac {
     margin-top: 20px;
     height: 100%;
     width: 100%;
-    overflow:hidden;
+    overflow: hidden;
   }
 
   .footer {
@@ -437,4 +531,5 @@ ul {
   .foot-log {
     width: 120px;
   }
+
 }
