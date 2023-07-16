@@ -107,33 +107,44 @@ input:hover {
 .container-products {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr, 1fr;
+  grid-template-rows: 1fr ;
   grid-template-areas:
-    ". product1"
-    "product2 .";
-  padding: 30px;
+    "product2 product1";
+  padding: 10px;
   margin: 10px;
   background-color: #28c4e7a1;
   border-radius: 10px;
+  width: 70%; 
+  height: 30%; 
+
 }
 .product1 {
   grid-area: product1;
   background-color: white;
   border-radius: 10px;
   box-shadow: 1px 1px 5px;
+  margin: 20px;
 }
 .product1:hover {
   background-color: rgb(250, 248, 246);
-  }
+}
+
+.img1{
+  width: 100%;
+}
 
 .product2 {
   grid-area: product2;
   background-color: white;
   border-radius: 10px;
-  height: 350px;
   padding-top: 30px;
+  margin: 20px;
   box-shadow: 1px 1px 5px;
 }
+.img2{
+width: 40%;
+}
+
 .cont-info-prod {
   margin: 30px;
   font-weight: bold;
@@ -404,9 +415,15 @@ input:hover {
     grid-template-areas:
       "product1 product1"
       "product2 product2";
+      height: 50%;
+    width: 100%;
+
   }
   .product1 {
     grid-area: product1;
+  }
+  .img1{
+    width: 110%;
   }
 
   .product2 {
