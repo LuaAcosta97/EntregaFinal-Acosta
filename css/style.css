@@ -73,6 +73,9 @@ a:hover {
   margin: 15px;
 }
 
+.buscador:hover{
+padding: 10px;
+}
 input {
   padding: 3px;
   align-items: start;
@@ -104,7 +107,7 @@ input:hover {
 .container-products {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
+  grid-template-rows: 1fr, 1fr;
   grid-template-areas:
     ". product1"
     "product2 .";
@@ -119,6 +122,9 @@ input:hover {
   border-radius: 10px;
   box-shadow: 1px 1px 5px;
 }
+.product1:hover {
+  background-color: rgb(250, 248, 246);
+  }
 
 .product2 {
   grid-area: product2;
@@ -308,6 +314,10 @@ input:hover {
   width: 400px;
   height: 200px;
 }
+.cont-h1{
+  margin: 15px;
+  font-size: xx-large;
+}
 
 .cont-section-divs {
   display: flex;
@@ -329,17 +339,17 @@ input:hover {
 
 .formul-container {
   border: rgb(13, 141, 173) 3px solid;
-  height: 370px;
+  height: 390px;
   padding: 12px;
   max-width: 40%;
 }
 .formul-textarea {
-  height: 250;
-  width: 450;
+  height: 250px;
+  width: 450px;
   background-color: #8be7fcb2;
 }
-.img-contac {
-  height: 420px;
+.cont-img-container{
+   height: 100%;
   max-width: 40%;
   overflow: hidden;
 }
@@ -365,6 +375,10 @@ input:hover {
     align-items: center;
     width: 100%;
     background-color: white;
+  }
+  .buscador{
+    width: 200px;
+
   }
 
   .eslogan{
@@ -415,6 +429,12 @@ input:hover {
     display: block;
   }
 
+  .card {
+    width: 100%;
+  }
+.comedero{
+  width: 100%;
+}
   .piedras {
     width: 70%;
   }
@@ -473,8 +493,8 @@ input:hover {
   .nos-article-info2 {
     width: 80%;
     height: 20%;
-  }
-
+  
+}
   .cont-section-divs {
     display: block;
     justify-content: space-between;
@@ -488,35 +508,43 @@ input:hover {
   }
 
   .formul {
-    height: 120%;
+    height: 100%;
     width: 100%;
     background-color: #05c1ebc7;
     display: block;
-    overflow: hidden;
     border-radius: 0%;
+    overflow: hidden;
   }
 
   .formul-container {
-    height: 40%;
+    height: 45%;
     padding: 12px;
     max-width: 80%;
+    overflow: hidden;
   }
   .formul-textarea {
     height: 50%;
   }
-  .img-contac {
-    margin-top: 20px;
+
+  .cont-img-container{
+   margin-top: 20px;
     height: 100%;
     width: 100%;
-    overflow: hidden;
+    overflow: visible;
   }
+
+ .cont-img {
+  height: 50%;
+    width: 220%;
+ }
+    
 
   .footer {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding-top: 30px;
-    height: 280px;
+    min-height:50%;
     background-color: white;
     width: 100%;
   }
