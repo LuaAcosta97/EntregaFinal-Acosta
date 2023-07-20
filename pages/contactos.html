@@ -54,30 +54,36 @@
                 </ul>
             </article>
         </section>
-        <section class=" formul">
-            <div class="formul-container">
+        <section class="formul-container ">
+            <div class="formul">
                 <h3> Si tenés alguna consulta, idea que quieras compartirnos o simplemente decirnos lo que pensas de
                     nuestros productos, nos encantaría que nos escribas </h3>
                 <form action="#" method="get">
-                    <ul>
-                        <label for="Nombre"> Nombre </label>
-                        <input type="text" placeholder="nombre" name="nombre">
-                        <label for="email">E-mail</label>
-                        <input type="email" placeholder="nombre@ejemplo.com">
-                        <label for="tel">Tel</label>
-                        <input type="number" placeholder="tel">
-                    </ul>
-                    <ul>
-                        <label for="asunto">Asunto de interes</label>
-                        <select name="asuntos">
+                    <ul class="formul-ul-container">
+                        <li class="formul-li-container">
+                            <label for="Nombre"> Nombre </label>
+                            <input type="text" placeholder="nombre" name="nombre">
+                        </li>
+                        <li class="formul-li-container">
+                            <label for="email">E-mail </label>
+                            <input type="email" placeholder="nombre@ejemplo.com">
+                        </li>
+                        <li class="formul-li-container">
+                            <label for="tel">Tel </label>
+                            <input type="number" placeholder="tel">
+                        </li>
+                        <li class="formul-li-container">
+                            <label for="asunto">Asunto de interes</label>
+                            <select name="asuntos">
                             <option value="productos">Productos</option>
                             <option value="Adopciones">Adopciones</option>
                             <option value="servicio"> Servicio veterinario</option>
                             <option value="servicio">Servicio Peluqueria</option>
                         </select>
+
+                    </li>
                     </ul>
                     <input class="formul-textarea" type="textarea" placeholder="tipo de atención o consulta">
-
                     <input type="submit" value="enviar">
                 </form>
             </div>
