@@ -3,7 +3,7 @@
   flex-direction: row;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  padding: 60px;
+  margin: 60px;
 }
 
 .nos-info-divs {
@@ -17,7 +17,7 @@
 .nos-article-info1 {
   width: 650px;
   background-color: #05c1ebc7;
-  padding: 25px;
+  padding: 20px;
   margin: 10px;
   border-radius: 5px;
   border: #24b6d6 solid;
@@ -35,37 +35,18 @@
 }
 
 @media (max-width: 768px) {
-  
-
-  .section-divs-container {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .tres-divs {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 30px;
-    width: 140px;
-    padding: 20px;
-    margin: 10px;
-  }
-
-  .tres-divs:hover {
-    background-color: #62e2ff;
-    color: white;
-    border: 5px #3ed7fdc4 solid;
-    border-radius: 40%;
-    height: 30px;
-    width: 60%;
+  .nos-section-divs {
+    display: block;
+    align-items: start;
+    margin: auto;
   }
 
   .nos-info-divs {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    width: 410px;
+    flex-wrap: wrap;
+    width: 380px;
     height: 100%;
   }
 
@@ -74,16 +55,15 @@
     flex-direction:column;
     align-items: center;
     width: 80%;
-    height: 20%;
+    height: auto;
   }
 
   .nos-article-info2 {
     display: flex;
     flex-direction:column;
     align-items: center;
-    flex-wrap: wrap;
     padding-top: 5px;
     width: 80%;
-    height: 37%;
+    height: auto;
   }
 }
