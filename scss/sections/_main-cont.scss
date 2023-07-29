@@ -14,20 +14,17 @@
     align-items: flex-start;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    
     padding: 60px;
   }
  
   .formul-container {
-    height: 65%;
+    height: auto;
     width: 100%;
-    padding: 40px;
-    margin: 20px ;
+    padding: 40px 5px;
     background-color: #05c1ebc7;
     display: flex;
     justify-content: space-around;
     overflow: hidden;
-    border-radius: 20px;
   }
   
   .formul {
@@ -46,18 +43,18 @@
     padding: 4px;
   }
   .formul-textarea {
+    margin: 10px;
     height: 230px;
     width: 80%;
     background-color: #8be7fcb2;
   }
-  .cont-img-container {
-    height: 100%;
-    width: 40%;
+  .cont-img {
+    width: 100%;
   }
-  @media (max-width: 1025px) {
+  @media (max-width: 1100px) {
 
     .formul-container {
-      height: 80%;
+      height: auto;
       width: 100%;
       margin: 0px ;
       padding: 5px;
@@ -69,7 +66,7 @@
       margin: 10px;
     }
     .cont-img-container {
-      margin-top: 20px;
+      margin-top: 30px;
       height: 80%;
       width: 100%;
       overflow: visible;
@@ -94,36 +91,38 @@
       
     }
     .formul-container {
-      height: 170%;
+      height: 100%;
       width: 100%;
       margin: 0%;
+      padding: 0%;
       background-color: #05c1ebc7;
-      display: block;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       border-radius: 0%;
     }
     .formul {
-      height: 30%;
-      width: 85%;
+      height: 50%;
+      width: 75%;
       overflow: hidden;
-      padding: 5%;
-      margin: 0%;
+      margin: 30px 0px;
     }
     .formul-textarea {
       width: 70%;
-      height: 56%;
+      height: 30%;
       margin-top: 5px;
     }
   
     .cont-img-container {
-      margin-top: 20px;
-      height: 100%;
-      width: 80%;
+      margin: 0%;
+      height: 60%;
+      width: 100%;
       overflow: visible;
     }
   
     .cont-img {
-      height: 80%;
-      width: 70%;
+      height: 100%;
+      width: 100%;
       margin-left: 0px;
       padding: 0px;
     }
@@ -133,25 +132,15 @@
    
     
     .formul-container {
-      align-content: center;
       height: 120%;
-      width: 100%;
-      border-radius: 0%;
-      overflow:hidden;
     }
-
     .formul {
-      height: 45%;
+      height: 55%;
       width: 85%;
+      margin: 10px;
+
     }
     .formul-textarea {
-      width: 70%;
       height: 40%;
-    }
-    .cont-img-container {
-      
-      height: 50%;
-      width: 100%;
-      overflow: visible;
     }
   }
