@@ -35,11 +35,12 @@ a:hover {
 
 .tres-divs {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 40px;
-  width: 80px;
-  padding: 40px;
+  height: 85px;
+  width: 120px;
+  padding: 20px;
   margin-top: 30px;
   border-radius: 35%;
   border: 5px #48b6d1c4 solid;
@@ -51,8 +52,8 @@ a:hover {
   color: white;
   border: 5px #3ed7fdc4 solid;
   border-radius: 40%;
-  height: 38px;
-  width: 70px; }
+  height: 80px;
+  width: 110px; }
 
 @media (max-width: 768px) {
   body {
@@ -63,7 +64,6 @@ a:hover {
     align-items: center;
     height: 30px;
     width: 100px;
-    padding: 20px;
     margin: 10px; }
   .tres-divs:hover {
     background-color: #62e2ff;
