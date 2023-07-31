@@ -12,7 +12,18 @@
     border-radius: 30px;
     margin: 15px;
   }
- 
+.serv-sectioin-adop{
+display: flex;
+  }
+  .accordion{
+  align-items: center;
+  width: 50%;
+}
+
+.card1-perro-sonriente{
+  width: 50%;
+  height: 100px;
+}
   .serv-vet-container {
     display: flex;
     align-items: flex-start;

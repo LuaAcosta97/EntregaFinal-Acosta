@@ -1,6 +1,16 @@
+
+
+
+
 .inicio {
   background-color: #f29696;
   padding: 20px;
+}
+
+.section-bottom-index{
+  height: 700px;
+  font-family: $font-prueba1;
+  color: white
 }
 
 .eslogan {
@@ -109,14 +119,6 @@ input:hover {
   background-color: #038eff;
   font-weight: bold;
   border-radius: 12px;
-}
-
-
-
-.aside-h2 {
-  width: auto;
-  height: 80px;
-  margin: 10px;
 }
 
 @media (max-width: 768px) {
