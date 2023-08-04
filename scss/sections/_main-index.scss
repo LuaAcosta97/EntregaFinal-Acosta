@@ -35,7 +35,7 @@ input:hover {
   margin-left: 20%;
 }
 
-.inicio-title-PRODC {
+.inicio-title {
   display: flex;
   justify-content: center;
   place-items: center;
@@ -44,37 +44,31 @@ input:hover {
 
 .inicio-section {
   display: flex;
-  justify-content: flex-end;
-  place-items: center;
+  justify-content: center;
 }
 
 .container-products {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 3, 1fr;
   grid-template-rows: 1fr;
-  grid-template-areas: "product2 product1";
-  padding: 10px;
-  margin: 10px;
-  background-color: #28c4e7a1;
-  border-radius: 10px;
+  grid-template-areas: "product1 product2 product3";
+  padding: 5%;
   width: 70%;
-  height: 30%;
+  height: auto;
 }
 
 .product1 {
   grid-area: product1;
   background-color: white;
   border-radius: 10px;
-  box-shadow: 1px 1px 5px;
+  box-shadow: 1px 1px 7px;
   margin: 20px;
-}
-
-.product1:hover {
-  background-color: rgb(250, 248, 246);
+  display: flex;
+  flex-direction: column;
 }
 
 .img1 {
-  width: 100%;
+  width: 90%;
 }
 
 .product2 {
@@ -83,19 +77,45 @@ input:hover {
   border-radius: 10px;
   padding-top: 30px;
   margin: 20px;
-  box-shadow: 1px 1px 5px;
+  box-shadow: 1px 1px 7px;
 }
 
 .img2 {
-  width: 40%;
+  width: 90%;
+}
+
+.product3 {
+  grid-area: product3;
+  background-color: white;
+  border-radius: 10px;
+  padding-top: 30px;
+  margin: 20px;
+  box-shadow: 1px 1px 7px;
+  overflow: hidden;
+}
+
+.img3 {
+  width: 87%;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
 }
 
 .cont-info-prod {
-  margin: 30px;
+  padding: 10px;
   font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  height: 20%;
+  overflow: hidden;
 }
 
 .bay {
+  width: 150px;
   background-color: #0076fc;
   color: white;
   padding: 8px;
@@ -110,16 +130,52 @@ input:hover {
   font-weight: bold;
   border-radius: 12px;
 }
-
-
-
-.aside-h2 {
-  width: auto;
-  height: 80px;
-  margin: 10px;
+.inicio-article-links {
+  display: grid;
+  grid-template-columns: 0, 5fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "img-adop img-adop  img-vet"
+    "img-adop img-adop  img-pelu";
+  width: 100%;
+  height: 50%;
+  background-color: rgb(134, 231, 255);
 }
 
-@media (max-width: 768px) {
+.img-adop {
+  grid-area: img-adop;
+  border-radius: 10px;
+  margin: 20px;
+  box-shadow: 1px 1px 7px;
+  overflow: hidden;
+}
+.img-vet {
+  grid-area: img-vet;
+  border-radius: 10px;
+  margin: 20px;
+  box-shadow: 1px 1px 7px;
+  align-items: center;
+  overflow: hidden;
+}
+.img-pelu {
+  grid-area: img-pelu;
+  border-radius: 10px;
+  margin: 20px;
+  box-shadow: 1px 1px 7px;
+  align-items: center;
+  overflow: hidden;
+}
+.links {
+  width: 100%;
+}
+
+.inicio-3rsección {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+@media (max-width: 1000px) {
   .buscador {
     width: 200px;
   }
@@ -135,7 +191,7 @@ input:hover {
   }
 
   .img1 {
-    width: 150%;
+    width: 110%;
     overflow: scroll;
   }
 
@@ -145,25 +201,26 @@ input:hover {
 
   .container-products {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas:
-      "product1 product1"
-      "product2 product2";
-    height: 50%;
-    width: 100%;
+      "product1 "
+      "product2 "
+      "product3 ";
+    height: 100%;
+    width: 40%;
   }
 
   .product1 {
     grid-area: product1;
-  }
-
-  .img1 {
-    width: 110%;
+    margin-top: 20px;
   }
 
   .product2 {
     grid-area: product2;
-    margin-top: 20px;
+  }
+
+  .product3 {
+    grid-area: product3;
   }
 }

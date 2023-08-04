@@ -10,12 +10,39 @@
     background-color: rgb(245, 186, 195);
     border: 1px #e07d7d solid;
     border-radius: 30px;
-    margin: 15px;
+    margin: 50px;
   }
-  .card mb-3{
-    width: 100%;
+  .boxs-adop-container {
+    background-color:  #6de2ffdc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
   }
-  
+  .serv-article-requisitos{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 90%;
+    padding: 5%;
+  }
+  .container-requisitos{
+    width: 450px;
+    margin-left: 4%;
+  }
+  .serv-article-preguntas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    padding: 5%;
+    padding-top: 0%;
+  }
+
+  .accordion2{
+    background-color: #b8e9ff;
+    border-radius: 15px;
+  }
  
   .serv-vet-container {
     display: flex;
@@ -40,10 +67,7 @@
     margin: 10px;
     padding: 8px;
   }
-  iframe {
-    margin: 40px;
-    margin-top: 12%;
-  }
+ 
   .serv-pelu-container {
     display: flex;
     align-items: flex-start;
@@ -63,10 +87,14 @@
     border-radius: 30px;
   }
   @media (max-width: 768px) {
-    .img-adopciones {
-      width: 100%;
-      margin-left: 0%;
+    .serv-article-requisitos{
+      display: flex;
+      flex-direction:column-reverse;
     }
+    .serv-article-preguntas{
+      width: 100%;
+    }
+   
     .serv-vet-container {
       display: flex;
       flex-direction: column;
@@ -80,10 +108,6 @@
     .serv-article-vet {
       margin-left: 0%;
       width: 70%;
-    }
-    iframe {
-      width: 70%;
-      height: 100%;
     }
     .serv-pelu-container {
       display: flex;
