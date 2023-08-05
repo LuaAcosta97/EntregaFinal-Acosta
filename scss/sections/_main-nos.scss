@@ -14,15 +14,18 @@
   justify-content: center;
   flex-wrap: wrap;
 }
+
 .nos-article-container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .nos-quienes-somos {
   display: flex;
   justify-content: space-evenly;
 }
+
 .nos-article-info1 {
   width: 650px;
   height: 100px;
@@ -35,27 +38,28 @@
 }
 
 .nos-article-info2 {
-  width: 80%;
-  height: 100px;
+  width: 82%;
+  height: 105px;
   background-color: #05c1ebc7;
-  padding: 25px;
+  padding: 27px;
   margin: 10px;
   border-radius: 5px;
   border: #24b6d6 solid;
   overflow: visible;
   align-items: center;
 }
+
 @media (max-width: 1145px) {
   .nos-quienes-somos {
-  flex-direction: column-reverse;
-  justify-content: center;
-  align-items: flex-end;
-  align-content: space-around;
-  flex-wrap: wrap;
-  
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: flex-end;
+    align-content: space-around;
+    flex-wrap: wrap;
   }
-  .img-quines-somos{
-    width: 40%; 
+
+  .img-quines-somos {
+    width: 40%;
   }
 }
 
@@ -74,7 +78,6 @@
     width: 380px;
     height: 100%;
   }
-  
 
   .nos-article-info1 {
     display: flex;

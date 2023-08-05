@@ -1,126 +1,131 @@
+.serv-main-h1 {
+  display: flex;
+  justify-content: center;
+  background-color: #05c1ebc7;
+  padding: 20px;
+}
 
-  .serv-main-h1 {
+.serv-article-adop {
+  padding: 30px;
+  background-color: rgb(245, 186, 195);
+  border: 1px #e07d7d solid;
+  border-radius: 30px;
+  margin: 50px;
+}
+
+.boxs-adop-container {
+  background-color: #6de2ffdc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.serv-article-requisitos {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 90%;
+  padding: 5%;
+}
+
+.container-requisitos {
+  width: 450px;
+  margin-left: 4%;
+}
+
+.serv-article-preguntas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  padding: 5%;
+  padding-top: 0%;
+}
+
+.accordion2 {
+  background-color: #b8e9ff;
+  border-radius: 15px;
+}
+
+.serv-article-vet {
+  width: 60%;
+  padding: 30px;
+  margin: 20px;
+  background-color: rgb(245, 186, 195);
+  border: 1px #e07d7d solid;
+  border-radius: 30px;
+}
+
+.serv-map-vet {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0% 2%;
+}
+
+.info-Maps li {
+  margin: 10px;
+  padding: 8px;
+}
+
+.serv-map-pelu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0% 2%;
+}
+
+.serv-article-pelu {
+  width: 60%;
+  padding: 30px;
+  margin: 20px;
+  background-color: rgb(245, 186, 195);
+  border: 1px #e07d7d solid;
+  border-radius: 30px;
+}
+
+@media (max-width: 892px) {
+  .serv-article-requisitos {
     display: flex;
-    justify-content: center;
-    background-color: #05c1ebc7;
-    padding: 20px;
-  }
-  .serv-article-adop {
-    padding: 30px;
-    background-color: rgb(245, 186, 195);
-    border: 1px #e07d7d solid;
-    border-radius: 30px;
-    margin: 50px;
-  }
-  .boxs-adop-container {
-    background-color:  #6de2ffdc;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center ;
-  }
-  .serv-article-requisitos{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 90%;
-    padding: 5%;
-  }
-  .container-requisitos{
-    width: 450px;
-    margin-left: 4%;
-  }
-  .serv-article-preguntas{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 80%;
-    padding: 5%;
-    padding-top: 0%;
+    flex-direction: column-reverse;
   }
 
-  .accordion2{
-    background-color: #b8e9ff;
-    border-radius: 15px;
+  .serv-article-preguntas {
+    width: 100%;
   }
- 
+
   .serv-vet-container {
     display: flex;
-    align-items: flex-start;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
   }
-  .serv-vet-div {
+
+  .serv-map-vet {
     display: flex;
     flex-direction: column;
-    align-items:flex-end;
+    align-items: center;
   }
-  
+
   .serv-article-vet {
-    width: 80%;
-    padding: 30px;
-    margin: 20px;
-    background-color: rgb(245, 186, 195);
-    border: 1px #e07d7d solid;
-    border-radius: 30px;
-  } 
-  .info-Maps li{
-    margin: 10px;
-    padding: 8px;
+    margin-left: 0%;
+    width: 75%;
   }
- 
+
   .serv-pelu-container {
     display: flex;
-    align-items: flex-start;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
   }
-  .serv-pelu-div {
+
+  .serv-map-pelu {
     display: flex;
     flex-direction: column;
-    align-items:flex-end;
+    align-items: center;
   }
+
   .serv-article-pelu {
-    width: 80%;
-    padding: 30px;
-    margin: 20px;
-    background-color: rgb(245, 186, 195);
-    border: 1px #e07d7d solid;
-    border-radius: 30px;
+    margin-left: 0%;
+    width: 75%;
   }
-  @media (max-width: 768px) {
-    .serv-article-requisitos{
-      display: flex;
-      flex-direction:column-reverse;
-    }
-    .serv-article-preguntas{
-      width: 100%;
-    }
-   
-    .serv-vet-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    .serv-vet-div {
-      display: flex;
-      flex-direction: column;
-      align-items:center;
-      }
-    .serv-article-vet {
-      margin-left: 0%;
-      width: 70%;
-    }
-    .serv-pelu-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    .serv-pelu-div {
-      display: flex;
-      flex-direction: column;
-      align-items:center;
-      }
-    .serv-article-pelu {
-      margin-left: 0%;
-      width: 70%;
-    }
-  }
+}
