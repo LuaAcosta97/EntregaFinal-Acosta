@@ -31,7 +31,7 @@
 
 .container-requisitos {
   width: 450px;
-  margin-left: 4%;
+  margin: 4%;
 }
 
 .serv-article-preguntas {
@@ -90,7 +90,9 @@
     display: flex;
     flex-direction: column-reverse;
   }
-
+  .container-requisitos {
+    width: 100%;
+  }
   .serv-article-preguntas {
     width: 100%;
   }
@@ -105,6 +107,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
   }
 
   .serv-article-vet {
@@ -122,6 +125,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
   }
 
   .serv-article-pelu {

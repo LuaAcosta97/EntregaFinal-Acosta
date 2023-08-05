@@ -33,7 +33,7 @@ a {
   border-radius: 17px;
 }
 iframe {
-  margin: 40px;
+  margin: 0px 10px;
   margin-top: 5%;
 }
 //  divs  /
@@ -76,6 +76,9 @@ iframe {
 @media (max-width: 768px) {
   body {
     padding: 0px;
+  }
+  iframe {
+    width: 90%;
   }
 
   .tres-divs {
