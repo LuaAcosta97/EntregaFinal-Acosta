@@ -338,7 +338,7 @@ input:hover {
   overflow: hidden; }
 
 .img-vet:hover {
-  transform: translateY(-9px);
+  transform: translateY(-7px);
   transition: all 1s; }
 
 .img-pelu {
@@ -351,7 +351,7 @@ input:hover {
   overflow: hidden; }
 
 .img-pelu:hover {
-  transform: translateY(-10px);
+  transform: translateY(-9px);
   transition: all 1s; }
 
 .link-adop {
@@ -426,9 +426,9 @@ input:hover {
   .img-adop {
     margin: 0px 20px; }
   .img-vet {
-    margin: 5px 20px; }
+    margin: 7px 20px; }
   .img-pelu {
-    margin: 5px 20px; } }
+    margin: 10px 20px; } }
 
 .prod-section {
   background-color: #3dccec;
@@ -645,7 +645,7 @@ input:hover {
 
 .nos-article-info1 {
   width: 650px;
-  height: 100px;
+  height: 120px;
   background-color: #38c2e0;
   padding: 20px;
   margin: 10px;
